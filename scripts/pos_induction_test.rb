@@ -38,5 +38,5 @@ if ARGV.length == 0
   exit(2)
 end
 confFile = ARGV[0]
-cmd = "java -cp target/prototype-sequence-toolkit-1.0.jar #{CLASS} ++#{confFile}"
+cmd = "java -Xmx4g -cp target/prototype-sequence-toolkit-1.0.jar #{CLASS} ++#{confFile}"
 exec(cmd)
